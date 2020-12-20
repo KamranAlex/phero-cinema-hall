@@ -5,7 +5,7 @@ import './MovieCard.css';
 const MoviesCard = ({ newMovie }) => {
   const history = useHistory();
   const handleBookShow = (id) => {
-    history.push(`/bookSeat/${id}`);
+    history.push(`/seatBook/${id}`);
   };
   return (
     <div className='col-md-3'>
