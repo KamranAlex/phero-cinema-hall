@@ -1,0 +1,15 @@
+.movie-card {
+  border-radius: 5px !important;
+  padding: 0 !important;
+  box-shadow: 4px 3px 5px 5px gray;
+}
+.btn-join {
+  height: 65px;
+  font-weight: 500 !important;
+  margin-left: 0 !important ;
+  margin-right: 0 !important ;
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important;
+  border-bottom-left-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+}

@@ -21,22 +21,22 @@ const Admin = () => {
 
   const handleSubmit = (e) => {
     const formData = new FormData();
-    // formData.append('file', file);
+    formData.append('file', file);
     formData.append('title', info.title);
     formData.append('date', info.date);
     formData.append('time', info.time);
-    // fetch('https://arcane-meadow-55145.herokuapp.com/addService', {
-    //   method: 'POST',
-    //   body: formData,
-    // })
-    //   .then((response) => response.json())
-    //   .then((data) => {
-    //     console.log(data);
-    //     history.push('/dashboard/serviceList');
-    //   })
-    //   .catch((error) => {
-    //     console.error(error);
-    //   });
+    fetch('http://localhost:5000/addMovie', {
+      method: 'POST',
+      body: formData,
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        window.location.reload(false);
+      })
+      .catch((error) => {
+        console.error(error);
+      });
     console.log(formData);
     e.preventDefault();
   };
